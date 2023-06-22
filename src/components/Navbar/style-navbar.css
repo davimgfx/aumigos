@@ -29,7 +29,7 @@
 }
 
 .btn.btn-slide{
-  box-shadow: inset 0 0 0 0 #FBB042;
+  box-shadow: inset 0 0 0 1px #FBB042;
 }
 
 .btn.btn-slide:hover {

@@ -1,2 +1,4 @@
 import Navbar from "./Navbar/Navbar.jsx"
-export { Navbar }
+import Hero from "./Hero/Hero.jsx"
+import About from "./About/About.jsx"
+export { Navbar, Hero, About }

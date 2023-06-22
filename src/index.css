@@ -21,3 +21,13 @@ html {
   font-size: 62.5%;
 }
 
+.section {
+  margin-left: 8rem;
+}
+
+.section-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
