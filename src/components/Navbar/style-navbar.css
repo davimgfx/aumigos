@@ -10,29 +10,10 @@
     height: 3px;
     width: 0;
     left: 0;
-    bottom: -33px;
+    bottom: -30px;
     transition:  ease-in-out 0.5s;
 }
 
 .nav-items:hover::after{
     width: 100%;
-}
-
-.btn{
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    transition:  ease-out 0.5s;
-}
-
-.btn.btn-slide{
-  box-shadow: inset 0 0 0 1px #FBB042;
-}
-
-.btn.btn-slide:hover {
-  box-shadow: inset 0 0 0 50px #FBB042;
-  color: white;
 }

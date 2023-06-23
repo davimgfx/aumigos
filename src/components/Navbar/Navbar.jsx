@@ -20,8 +20,8 @@ const Navbar = () => {
           ))}
           {/* CellPhone */}
           <div className="flex items-center">
-            <i class="fa-solid fa-phone text-[1.6rem] text-white bg-[#FBB042] p-[1.6rem] rounded-bl-[2rem]"></i>
-            <p className="text-[1.6rem] btn btn-slide p-[0.9rem] border-[#FBB042] border-solid font-[600] rounded-r-[2rem]">+55 71 99687-9987</p>
+            <i class="fa-solid fa-phone text-[1.6rem] text-white bg-[#FBB042] p-[1.2rem] rounded-bl-[2rem]"></i>
+            <p className="text-[1.4rem] btn btn-slide p-[0.6rem]  border-[#FBB042] border-solid font-[600] border-2 rounded-r-[2rem]">+55 71 99687-9987</p>
           </div>
         </ul>
       </nav>
