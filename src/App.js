@@ -1,4 +1,4 @@
-import { Navbar, Hero, About } from "./components";
+import { Navbar, Hero, About, Services, Feedback } from "./components";
 
 function App() {
   return (
@@ -6,6 +6,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Services/>
+      <Feedback/>
     </div>
   );
 }
