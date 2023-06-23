@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section id="home" className="section section-hero">
       <div className="flex gap-[2rem] items-center justify-between">
-        <div className="w-[54rem]">
+        <div className="w-[43rem]">
           {/* Title */}
           <div className="text-[76px] font-bold w-[60rem]">
             <span className="text-[#FBB042]">Aproveite suas</span> <br />

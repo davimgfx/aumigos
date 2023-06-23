@@ -1,0 +1,23 @@
+.icon-footer {
+    font-size: 2rem;
+    transition: ease-out 0.5s;
+    padding: 1rem;
+    background: #fbb042;
+    color: white;
+    cursor: pointer;
+    border-radius: 10rem;
+    font-weight: 300;
+}
+.icon-footer:hover {
+  background: white;
+  color: #fbb042;
+}
+
+.btn.btn-slide {
+  box-shadow: inset 0 0 0 1px #fbb042;
+}
+
+.btn.btn-slide:hover {
+  box-shadow: inset 0 0 0 50px #fbb042;
+  color: white;
+}

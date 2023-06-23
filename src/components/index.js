@@ -4,4 +4,5 @@ import About from "./About/About.jsx"
 import Button from "./Button/Button.jsx"
 import Services from "./Services/Services.jsx"
 import Feedback from "./Feedback/Feedback.jsx"
-export { Navbar, Hero, About, Button, Services, Feedback }
+import Footer from "./Footer/Footer.jsx"
+export { Navbar, Hero, About, Button, Services, Feedback, Footer }
