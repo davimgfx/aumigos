@@ -1,0 +1,6 @@
+.main-card{
+    background: url("../../imgs/bg-card.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+}

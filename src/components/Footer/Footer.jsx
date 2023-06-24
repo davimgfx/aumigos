@@ -33,7 +33,7 @@ const Footer = () => {
             Aberto
           </h2>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383] mt-[2rem]">
-            Seg - Dom: 8:00 - 16:00
+            Seg - Dom: 8:00h - 16:00h
           </p>
         </div>
         <div className="">

@@ -2,8 +2,8 @@ import React from "react";
 import img4 from "../../imgs/img4.png";
 const Feedback = () => {
   return (
-    <section id="feedback" className="mt-[5rem]">
-      <div className="flex gap-[2rem]  items-center ">
+    <section id="feedback" className="pt-[10rem]">
+      <div className="flex gap-[2rem]  items-center section-about">
         <div>
           <img src={img4} alt="" />
         </div>
