@@ -1,13 +1,13 @@
 import React from "react";
+import img5 from "../../imgs/img5.png";
 import Button from "../Button/Button";
 import PricingCards from "./PricingCards";
-import img5 from "../../imgs/img5.png"
 const Pricing = () => {
   return (
     <>
       <section id="pricing" className="pt-[10rem]  ">
         <div className="flex justify-start gap-[2rem] mx-[8rem]">
-          <div className="w-[45rem]">
+          <div className="w-[52rem]">
             {/* Title */}
             <div className="text-[76px] font-bold leading-tight">
               <span className="text-[#FBB042]">A melhor</span> <br />
@@ -30,25 +30,39 @@ const Pricing = () => {
             {/* Title */}
             <div className="text-[76px] font-bold w-[60rem] leading-tight">
               <h2 className="">
-                Atividades e
+                Hora do
                 <span className="text-center text-[#FBB042]">
                   {" "}
                   <br />
-                  Exercicios
+                  Check In
                 </span>
               </h2>
             </div>
             {/* Description */}
-            <p className="text-[16px] text-[#838383]  mt-[1rem] font-bold">
-              Nossos filhotes e outros cães muito ativos têm muito espaço para
-              correr e brincar, além de cobertores confortáveis.
-            </p>
+            <div className="flex gap-[2rem]  mt-[2.5rem]">
+              <i class="fa-solid fa-clock text-[3.5rem]"></i>
+              <div>
+              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">Das 8h até 22h</h2>
+                <p className="text-[16px] text-[#838383]  mt-[1rem] font-bold">
+                Os horários para deixar as coisas são após as 8h da manhã e a coleta é feita antes das 10h da manhã no dia de retorno.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-[2rem]  mt-[2.5rem]">
+              <i class="fa-solid fa-baseball text-[3.5rem]"></i>
+              <div>
+              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">Brinquedos Favoritos</h2>
+                <p className="text-[16px] text-[#838383]  mt-[1rem] font-bold">
+               Lembre-se de levar os brinquedos favoritos do seu animalzinho.
+                </p>
+              </div>
+            </div>
             {/* Icons */}
-            
+
             {/* Buttons */}
             <div className="flex gap-[2rem] mt-[2rem]">
-              <Button text="Veja mais" />
-              <Button text="Reserve Agora" />
+              <Button text="Agende sua visita" />
+              
             </div>
           </div>
           {/* Main Image */}
