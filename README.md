@@ -1,5 +1,5 @@
 <div align='center'>
- <img style="width:16%" src='src/imgs/logo.png'/>
+ <img style="width:16%" src='https://github.com/davimgfx/aumigos/assets/118557337/323d281f-cd71-4164-9de4-4444c6b7409f'/>
 </div>
 
 # Aumigos 🐶
