@@ -5,7 +5,9 @@ import {
   Services,
   Feedback,
   Pricing,
+  CheckIn,
   Footer,
+  Plan
 } from "./components";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Services />
       <Feedback />
       <Pricing />
+      <CheckIn/>
+      <Plan />
       <Footer />
     </div>
   );

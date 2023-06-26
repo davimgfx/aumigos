@@ -1,0 +1,93 @@
+import React from "react";
+import img6 from "../../imgs/img6.png";
+import Button from "../Button/Button";
+const Plan = () => {
+  return (
+    <section className="pt-[10rem]">
+      <div className="flex gap-[2rem]  items-center section-about">
+        <div>
+          <img src={img6} alt="" />
+        </div>
+        <div className="mb-[10rem] w-[80rem] pr-[8rem] ">
+          <div className="text-[76px] font-bold w-[60rem] leading-tight">
+            <h2 className="">
+              Plenejando
+              <span className="text-center text-[#FBB042]">
+                {" "}
+                <br />
+                Viajar?
+              </span>
+            </h2>
+          </div>
+          <h2 className="font-bold text-[24px] mt-[2rem] leading-tight">
+            Estimule os preços para os dias que seus animalzinhos irá curtir com
+            a gente :)
+          </h2>
+
+          {/* Forms */}
+          <form className="flex flex-col gap-[2rem] mt-[2rem]">
+            {/* Pet */}
+            <div>
+              <label className="font-[600] text-[18px] mt-[2rem] leading-tight text-[#838383]">
+                Seu pet
+              </label>
+              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+                <option>Selecione</option>
+                <option value="dog">Cachorro</option>
+                <option value="cat">Gato</option>
+              </select>
+            </div>
+
+            {/* Services */}
+            <div>
+              <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
+                Serviço
+              </label>
+              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+                <option>Selecione</option>
+                <option value="hosp">Hospedagem</option>
+                <option value="shower">Banho</option>
+                <option value="all">Hospedagem + Banho</option>
+              </select>
+            </div>
+
+            {/* Days */}
+            <div>
+              <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
+                Dias
+              </label>
+              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+                <option>Selecione</option>
+                <option value="1day">1 dia</option>
+                <option value="2day">2 dias</option>
+                <option value="3day">3 dias</option>
+                <option value="4day">4 dias</option>
+                <option value="5day">5 dias</option>
+                <option value="6day">6 dias</option>
+                <option value="7day">7 dias</option>
+                <option value="8day">8 dias</option>
+                <option value="9day">9 dias</option>
+                <option value="10day">10 dias</option>
+              </select>
+            </div>
+          </form>
+          {/* Total + Button */}
+          <div className="flex items-baseline gap-[3rem]">
+            <div
+              onClick={() => {
+                alert("Hello");
+              }}>
+              <Button text="Veja os valores" />
+            </div>
+            <h2 className="font-bold text-[32px] leading-tight text-[#FBB042] ">
+              Total: <span className="text-black">R$</span>{" "}
+              <span className="text-black">...</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Plan;

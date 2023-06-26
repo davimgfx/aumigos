@@ -5,7 +5,7 @@ import "./style-footer.css"
 const Footer = () => {
   return (
     <section className="mt-[5rem]" id="footer">
-      <div className="flex justify-center flex-wrap  gap-[10rem] mx-[8rem]">
+      <div className="flex justify-between flex-wrap mx-[8rem]">
         <div className="flex flex-col gap-[2rem] items-center">
           <img src={logo} alt="logo" className="w-[22rem]" />
           <div className="flex gap-[1.6rem] items-center ">
