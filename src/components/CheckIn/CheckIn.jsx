@@ -19,7 +19,7 @@ const CheckIn = () => {
           </div>
           {/* Description */}
           <div className="flex gap-[2rem] mt-[2.5rem] md1090:justify-center md1090:mt-0 min700:mt-[3rem]">
-            <i class="fa-solid fa-clock text-[3.5rem] md1090:hidden"></i>
+            <i className="fa-solid fa-clock text-[3.5rem] md1090:hidden"></i>
             <div>
               <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">
                 Das 8h até 22h
@@ -31,7 +31,7 @@ const CheckIn = () => {
             </div>
           </div>
           <div className="flex gap-[2rem] mt-[2.5rem] md1090:justify-center md1090:mt-0 ">
-            <i class="fa-solid fa-baseball text-[3.5rem] md1090:hidden"></i>
+            <i className="fa-solid fa-baseball text-[3.5rem] md1090:hidden"></i>
             <div>
               <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] min700:mx-[2rem]">
                 Brinquedos Favoritos

@@ -16,16 +16,16 @@ const Hero = () => {
           </div>
           <div className="flex justify-center gap-[2rem] mt-[3.5rem] md1090:mt-[2rem] min375:flex-col">
             <div className=" flex gap-[2rem] items-baseline  my-auto border-t-0 border-b-0 border-l-0  border-2 border-solid border-[#838383] min375:justify-center min375:border-0">
-              <i class="fa-solid fa-dog text-[3rem] text-[#838383]  min700:text-[2.5rem]"></i>
-              <i class="fa-solid fa-cat text-[5rem] text-[#FBB042] min700:text-[4.5rem]"></i>
-              <i class="fa-solid fa-dog text-[8rem] mr-[2rem] min700:text-[6.5rem]"></i>
+              <i className="fa-solid fa-dog text-[3rem] text-[#838383]  min700:text-[2.5rem]"></i>
+              <i className="fa-solid fa-cat text-[5rem] text-[#FBB042] min700:text-[4.5rem]"></i>
+              <i className="fa-solid fa-dog text-[8rem] mr-[2rem] min700:text-[6.5rem]"></i>
             </div>
             <div className="my-auto text-[20px] text-center font-[600] min700:text-[1.6rem] ">Aceitamos <br />todos os tamanhos</div>
           </div>
         </div>
         {/* Image */}
         <div className=" ">
-          <img src={img1} alt="" className=" " />
+          <img src={img1} alt="img1" />
         </div>
       </div>
     </section>

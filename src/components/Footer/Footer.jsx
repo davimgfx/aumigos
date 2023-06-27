@@ -25,7 +25,8 @@ const Footer = () => {
             Av. Tancredo Neves, 3133
           </p>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383]">
-            Caminho das Árvores, < br className="hidden min375:block"/>Salvador - BA,
+            Caminho das Árvores, <br className="hidden min375:block" />
+            Salvador - BA,
           </p>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383]">
             41820-021
@@ -34,7 +35,8 @@ const Footer = () => {
             Aberto
           </h2>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383] mt-[2rem] min375:text-center">
-            Seg - Dom: < br className="hidden min375:block"/>8:00h - 16:00h
+            Seg - Dom: <br className="hidden min375:block" />
+            8:00h - 16:00h
           </p>
         </div>
         <div className="min700:items-center min700:flex min700:flex-col  min375:text-center">
@@ -59,8 +61,7 @@ const Footer = () => {
         </div>
         <div className="min700:items-center min700:flex min700:flex-col">
           <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] min375:text-center">
-            Noticias < br className="hidden min375:block"/>
-            e Promoções
+            Noticias <br className="hidden min375:block" />e Promoções
           </h2>
           <input
             type="text"
@@ -75,7 +76,6 @@ const Footer = () => {
         width="100%"
         height="300"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
         className="mt-[2rem]"></iframe>
     </section>
   );
