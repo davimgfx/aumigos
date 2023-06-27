@@ -4,12 +4,12 @@ import Button from "../Button/Button";
 const Plan = () => {
   return (
     <section className="pt-[10rem]">
-      <div className="flex gap-[2rem]  items-center section-about">
+      <div className="flex gap-[2rem]  items-center section-about md1090:flex-col-reverse">
         <div>
           <img src={img6} alt="" />
         </div>
-        <div className="mb-[10rem] w-[80rem] pr-[8rem] ">
-          <div className="text-[76px] font-bold w-[60rem] leading-tight">
+        <div className="mb-[10rem] w-[60rem] pr-[8rem] md1090:pr-0 md1090:w-auto  ">
+          <div className="text-[76px] font-bold w-[60rem] leading-tight md1090:text-center md1090:mx-[auto] md1090:w-auto">
             <h2 className="">
               Plenejando
               <span className="text-center text-[#FBB042]">
@@ -19,15 +19,15 @@ const Plan = () => {
               </span>
             </h2>
           </div>
-          <h2 className="font-bold text-[24px] mt-[2rem] leading-tight">
+          <h2 className="font-bold text-[24px] mt-[2rem] leading-tight text-center">
             Estimule os preços para os dias que seus animalzinhos irá curtir com
             a gente :)
           </h2>
 
           {/* Forms */}
-          <form className="flex flex-col gap-[2rem] mt-[2rem]">
+          <form className="flex flex-col gap-[2rem] mt-[2rem] md1090:justify-center md1090:items-center">
             {/* Pet */}
-            <div>
+            <div className="w-[100%] flex justify-center flex-col items-center">
               <label className="font-[600] text-[18px] mt-[2rem] leading-tight text-[#838383]">
                 Seu pet
               </label>
@@ -39,7 +39,7 @@ const Plan = () => {
             </div>
 
             {/* Services */}
-            <div>
+            <div className="w-[100%] flex justify-center flex-col items-center">
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Serviço
               </label>
@@ -52,7 +52,7 @@ const Plan = () => {
             </div>
 
             {/* Days */}
-            <div>
+            <div className="w-[100%] flex justify-center flex-col items-center">
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Dias
               </label>
@@ -72,7 +72,7 @@ const Plan = () => {
             </div>
           </form>
           {/* Total + Button */}
-          <div className="flex items-baseline gap-[3rem]">
+          <div className="flex items-baseline gap-[3rem] md1090:justify-center">
             <div
               onClick={() => {
                 alert("Hello");

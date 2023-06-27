@@ -1,22 +1,23 @@
 import React from "react";
 import logo from "../../imgs/logo.png";
 import Button from "../Button/Button.jsx";
-import "./style-footer.css"
+import { footerIcons } from "./footerInfo.js";
+import "./style-footer.css";
 const Footer = () => {
   return (
     <section className="mt-[5rem]" id="footer">
-      <div className="flex justify-between flex-wrap mx-[8rem]">
-        <div className="flex flex-col gap-[2rem] items-center">
-          <img src={logo} alt="logo" className="w-[22rem]" />
-          <div className="flex gap-[1.6rem] items-center ">
-            <i class="fa-brands fa-twitter icon-footer"></i>
-            <i class="fa-brands fa-whatsapp icon-footer"></i>
-            <i class="fa-brands fa-instagram icon-footer"></i>
-            <i class="fa-brands fa-facebook text-[2rem] icon-footer"></i>
-            <i class="fa-brands fa-linkedin text-[2rem] icon-footer"></i>
+      <div className="flex justify-between flex-wrap mx-[8rem] md1300:gap-[4rem] md1300:justify-center min700:items-center min700:mx-[2rem]">
+        <div className="flex flex-col gap-[2rem] items-center min700:items-start">
+          <img src={logo} alt="logo" className="w-[22rem] mx-auto" />
+          <div className="flex gap-[1.6rem] items-center min375:flex-wrap min375:justify-center">
+            {footerIcons.map((icon, index) => (
+              <i
+                className={`fa-brands ${icon.icon} icon-footer`}
+                key={index}></i>
+            ))}
           </div>
         </div>
-        <div className="">
+        <div className="min700:items-center min700:flex min700:flex-col min375:text-center">
           <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] mt-[0.2rem]">
             Local
           </h2>
@@ -24,7 +25,7 @@ const Footer = () => {
             Av. Tancredo Neves, 3133
           </p>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383]">
-            Caminho das Árvores, Salvador - BA,
+            Caminho das Árvores, < br className="hidden min375:block"/>Salvador - BA,
           </p>
           <p className="font-[600] text-[18px]  leading-tight text-[#838383]">
             41820-021
@@ -32,11 +33,11 @@ const Footer = () => {
           <h2 className="font-bold text-[24px] mt-[2rem] leading-tight text-[#FBB042]">
             Aberto
           </h2>
-          <p className="font-[600] text-[18px]  leading-tight text-[#838383] mt-[2rem]">
-            Seg - Dom: 8:00h - 16:00h
+          <p className="font-[600] text-[18px]  leading-tight text-[#838383] mt-[2rem] min375:text-center">
+            Seg - Dom: < br className="hidden min375:block"/>8:00h - 16:00h
           </p>
         </div>
-        <div className="">
+        <div className="min700:items-center min700:flex min700:flex-col  min375:text-center">
           <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">
             Outros Links
           </h2>
@@ -56,13 +57,15 @@ const Footer = () => {
             Itens para seu Pet
           </p>
         </div>
-        <div className="">
-          <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">
-            Noticias e Promoções
+        <div className="min700:items-center min700:flex min700:flex-col">
+          <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] min375:text-center">
+            Noticias < br className="hidden min375:block"/>
+            e Promoções
           </h2>
           <input
             type="text"
-            className="border-solid border-[#838383] border-2 rounded-full w-[16rem] h-[4rem] mt-[1rem] indent-[2rem] text-[1.6rem] focus:border-[#FBB042]" placeholder="Seu email"
+            className="border-solid border-[#838383] border-2 rounded-full w-[16rem] h-[4rem] mt-[1rem] indent-[2rem] text-[1.6rem] focus:border-[#FBB042]"
+            placeholder="Seu email"
           />
           <Button text="Não Perca Isso" />
         </div>

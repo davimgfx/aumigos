@@ -26,7 +26,6 @@ html {
 }
 
 .section-hero {
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -77,3 +76,19 @@ html {
   color: white;
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .section-about {
+    gap: 0rem;
+    
+  }
+
+  .section {
+    margin-left: 0rem;
+  }
+}

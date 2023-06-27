@@ -3,9 +3,9 @@ import Button from "../Button/Button";
 import "./style-pricingcards.css";
 const PricingCards = () => {
   return (
-    <div className="flex justify-center items-center mt-[1rem]">
+    <div className="flex justify-center items-center mt-[1rem]  min970:flex-col  min970:gap-[1rem]">
       <div>
-        <div className="justify-center flex-col text-center items-center py-[2rem]  min-w-[300px] h-[530px] bg-[#F2F2F4] rounded-[3rem]">
+        <div className="justify-center flex-col text-center items-center py-[2rem]  min-w-[300px] h-[530px] min970:w-[400px] bg-[#F2F2F4] rounded-[3rem]  min450:w-[100px]">
           <h2 className="text-[25px] font-bold leading-tight">
             Plano <br />
             <span className="text-[34px] text-[#FBB042]">Diário</span>
@@ -45,7 +45,7 @@ const PricingCards = () => {
       </div>
 
       <div>
-        <div className="flex justify-center flex-col text-center items-center py-[2rem] min-w-[300px] h-[580px] bg-[#F2F2F4] rounded-[3rem] main-card">
+        <div className="flex justify-center flex-col text-center items-center py-[2rem] min-w-[300px] h-[580px] bg-[#F2F2F4] min970:w-[400px] min970:h-[530px] rounded-[3rem] main-card  min450:w-[100px]">
           <h2 className="text-[25px] font-bold leading-tight">
             Plano <br />
             <span className="text-[34px] text-white">Mensal</span>
@@ -93,7 +93,7 @@ const PricingCards = () => {
       </div>
 
       <div>
-        <div className="justify-center flex-col text-center items-center py-[2rem]  min-w-[300px] h-[530px] bg-[#F2F2F4] rounded-[3rem]">
+        <div className="justify-center flex-col text-center items-center py-[2rem]  min-w-[300px] h-[530px] bg-[#F2F2F4] rounded-[3rem] min970:w-[400px]  min450:w-[100px]">
           <h2 className="text-[25px] font-bold leading-tight">
             Plano <br />
             <span className="text-[34px] text-[#FBB042]">3 Meses</span>
