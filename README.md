@@ -10,7 +10,7 @@ Também temos banho e hidratação, para deixar seus animalzinhos limpinhos e ch
 Venha fazer parte da nossa equipe 
 <br />
 <br />
-👉 Site: [Clique aqui](https://davimgfx.github.io/pulseGym/)
+👉 Site: [Clique aqui](https://aumigos-casa.vercel.app/)
 
 
 ### Construido com:
