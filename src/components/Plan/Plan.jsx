@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import img6 from "../../imgs/img6.png";
 import Button from "../Button/Button";
 const Plan = () => {
+  const [animal, setAnimal] = useState("Selecione");
+  const [service, setService] = useState("Selecione");
+  const [days, setDays] = useState("Selecione");
+  const [result, setResult] = useState("R$");
+
+  const calculatePrice = (event) => {
+    event.preventDefault();
+    if (
+      animal === "Selecione" ||
+      service === "Selecione" ||
+      days === "Selecione"
+    ) {
+      alert("Preencha todos os campos");
+    } else if (animal === "dog") {
+      if (service === "hosp") {
+        setResult("R$ " + (50 * parseInt(days)));
+      } else if (service === "shower") {
+        setResult("R$ " + (50 * parseInt(days)));
+      } else if (service === "all") {
+        setResult("R$ " + (90 * parseInt(days)));
+      }
+    } else if (animal === "cat") {
+      if (service === "hosp") {
+        setResult("R$ " + (30 * parseInt(days)).toFixed(2));
+      } else if (service === "shower") {
+        setResult("R$ " + (50 * parseInt(days)).toFixed(2));
+      } else if (service === "all") {
+        setResult("R$ " + (70 * parseInt(days)).toFixed(2));
+      }
+    }
+  };
+
   return (
     <section className="pt-[10rem]">
       <div className="flex gap-[2rem]  items-center section-about md1090:flex-col-reverse">
@@ -31,7 +63,10 @@ const Plan = () => {
               <label className="font-[600] text-[18px] mt-[2rem] leading-tight text-[#838383]">
                 Seu pet
               </label>
-              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+              <select
+                className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold"
+                value={animal}
+                onChange={(e) => setAnimal(e.target.value)}>
                 <option>Selecione</option>
                 <option value="dog">Cachorro</option>
                 <option value="cat">Gato</option>
@@ -43,7 +78,10 @@ const Plan = () => {
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Serviço
               </label>
-              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+              <select
+                className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold"
+                value={service}
+                onChange={(e) => setService(e.target.value)}>
                 <option>Selecione</option>
                 <option value="hosp">Hospedagem</option>
                 <option value="shower">Banho</option>
@@ -56,7 +94,10 @@ const Plan = () => {
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Dias
               </label>
-              <select className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold">
+              <select
+                className="border-solid border-[#838383]  text-black rounded-full focus:border-[#FBB042] w-[60%] p-[1.5rem] block text-[1.3rem] mt-[1rem] font-bold"
+                value={days}
+                onChange={(e) => setDays(e.target.value)}>
                 <option>Selecione</option>
                 <option value="1day">1 dia</option>
                 <option value="2day">2 dias</option>
@@ -73,15 +114,11 @@ const Plan = () => {
           </form>
           {/* Total + Button */}
           <div className="flex items-baseline gap-[3rem] md1090:justify-center  min450:flex-col min450:items-center">
-            <div
-              onClick={() => {
-                alert("Hello");
-              }}>
+            <div onClick={calculatePrice}>
               <Button text="Veja os valores" />
             </div>
             <h2 className="font-bold text-[32px] leading-tight text-[#FBB042] ">
-              Total: <span className="text-black">R$</span>{" "}
-              <span className="text-black">...</span>
+              Total: <span className="text-black">{result}</span>
             </h2>
           </div>
         </div>

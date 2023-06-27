@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../imgs/logo.png";
+import { footerIcons } from "../Footer/footerInfo.js";
 import { navLinks } from "./navLinks";
 import "./style-navbar.css";
-import { footerIcons } from "../Footer/footerInfo.js";
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
+ 
+  const [menu, setMenu] = useState(false); 
+  console.log(menu);
   return (
     <header>
       <nav className="py-2 px-[8rem] flex justify-between items-center z-[99]  fixed top-0 left-0 right-0 bg-white min600:px-[2.2rem]">
@@ -13,15 +15,11 @@ const Navbar = () => {
           <img src={logo} alt="" className="w-[100%]" />
         </a>
         {/* NavItens */}
-        <ul className={`nav-items min900:${ menu ? "left-[0%]" : "left-[100%]"}`}>
-          
+        <ul className={`nav-items min900:${menu ? "left-0" : "left-[100%]"}`}>
           {navLinks.map((nav, index) => (
-            <li
-              className="nav-item"
-              key={index}>
+            <li className="nav-item" key={index} onClick={() => setMenu(!menu)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-            
           ))}
           {/* Menu */}
           <div className="gap-[1.6rem] items-center min375:flex-wrap min375:justify-center hidden min900:flex">
@@ -39,7 +37,11 @@ const Navbar = () => {
             </p>
           </div>
         </ul>
-        <i className={`fa-solid ${!menu ? "fa-bars" : "fa-xmark"} text-[2.5rem] text-black hidden min900:block z-[999] cursor-pointer`} onClick={() => setMenu(!menu)}></i>
+        <i
+          className={`fa-solid ${
+            !menu ? "fa-bars" : "fa-xmark"
+          } text-[2.5rem] text-black hidden min900:block z-[999] cursor-pointer`}
+          onClick={() => setMenu(!menu)}></i>
       </nav>
     </header>
   );
