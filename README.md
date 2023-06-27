@@ -19,3 +19,7 @@ Venha fazer parte da nossa equipe
 - Tailwind.CSS  <br>
 
 ### Fotos do projeto:
+### Home
+![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/e05ee0ce-cdd1-4b31-b385-f9dcb3ae87ce)
+
+### Shop
