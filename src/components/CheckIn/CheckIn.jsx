@@ -21,19 +21,19 @@ const CheckIn = () => {
           <div className="flex gap-[2rem] mt-[2.5rem] md1090:justify-center md1090:mt-0 min700:mt-[3rem]">
             <i className="fa-solid fa-clock text-[3.5rem] md1090:hidden"></i>
             <div>
-              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042]">
+              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] md1090:mt-[2rem]">
                 Das 8h até 22h
               </h2>
               <p className="text-[16px] text-[#838383]  mt-[1rem] font-bold">
                 Os horários para deixar as coisas são após as 8h da manhã e a
-                coleta é feita antes das 10h da manhã no dia de retorno.
+                coleta é feita antes das 22h no dia de retorno.
               </p>
             </div>
           </div>
           <div className="flex gap-[2rem] mt-[2.5rem] md1090:justify-center md1090:mt-0 ">
             <i className="fa-solid fa-baseball text-[3.5rem] md1090:hidden"></i>
             <div>
-              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] min700:mx-[2rem]">
+              <h2 className="font-bold text-[24px] leading-tight text-[#FBB042] min700:mx-[2rem] md1090:mt-[2rem]">
                 Brinquedos Favoritos
               </h2>
               <p className="text-[16px] text-[#838383]  mt-[1rem] font-bold">
@@ -44,7 +44,7 @@ const CheckIn = () => {
           {/* Icons */}
 
           {/* Buttons */}
-          <div className="flex gap-[2rem] mt-[2rem] md1090:justify-center">
+          <div className="flex gap-[2rem] mt-[2rem] md1090:justify-center md1090:mt-[0rem]">
             <Button text="Agende sua visita" />
           </div>
         </div>
