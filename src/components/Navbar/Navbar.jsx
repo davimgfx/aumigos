@@ -1,35 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../imgs/logo.png";
 import { navLinks } from "./navLinks";
 import "./style-navbar.css";
-
+import { footerIcons } from "../Footer/footerInfo.js";
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <header>
-      <nav className="py-2 px-[8rem] flex justify-between items-center z-[999]  fixed top-0 left-0 right-0 bg-white min600:px-[2.2rem]">
+      <nav className="py-2 px-[8rem] flex justify-between items-center z-[99]  fixed top-0 left-0 right-0 bg-white min600:px-[2.2rem]">
         {/* Logo */}
         <a href="#" className="w-[10rem]">
           <img src={logo} alt="" className="w-[100%]" />
         </a>
         {/* NavItens */}
-        <ul className="flex gap-[4rem] items-center">
+        <ul className={`nav-items min900:${ menu ? "left-[0%]" : "left-[100%]"}`}>
+          
           {navLinks.map((nav, index) => (
             <li
-              className="text-[1.6rem] font-[700] nav-items hover:text-[#FBB042] "
+              className="nav-item"
               key={index}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
+            
           ))}
-        {/* Menu */}
-        <i className="fa-solid fa-bars text-[2.5rem] text-black hidden min900:block"></i> 
+          {/* Menu */}
+          <div className="gap-[1.6rem] items-center min375:flex-wrap min375:justify-center hidden min900:flex">
+            {footerIcons.map((icon, index) => (
+              <i
+                className={`fa-brands ${icon.icon} icon-footer`}
+                key={index}></i>
+            ))}
+          </div>
           {/* CellPhone */}
           <div className="flex items-center md1090:hidden">
             <i class="fa-solid fa-phone text-[1.6rem] text-white bg-[#FBB042] p-[1.2rem] rounded-bl-[2rem]"></i>
             <p className="text-[1.4rem] btn btn-slide p-[0.6rem] md1200:p-[0.4rem] border-[#FBB042] border-solid font-[600] border-2 rounded-r-[2rem]  ">
               +55 71 99687-9987
             </p>
-          </div> 
+          </div>
         </ul>
+        <i className={`fa-solid ${!menu ? "fa-bars" : "fa-xmark"} text-[2.5rem] text-black hidden min900:block z-[999] cursor-pointer`} onClick={() => setMenu(!menu)}></i>
       </nav>
     </header>
   );

@@ -10,16 +10,16 @@ const Plan = () => {
         </div>
         <div className="mb-[10rem] w-[60rem] pr-[8rem] md1090:pr-0 md1090:w-auto  ">
           <div className="text-[76px] font-bold w-[60rem] leading-tight md1090:text-center md1090:mx-[auto] md1090:w-auto">
-            <h2 className="">
+            <h2 className="min700:text-[4.8rem]">
               Plenejando
-              <span className="text-center text-[#FBB042]">
+              <span className="text-center text-[#FBB042] min700:text-[5.2rem] ">
                 {" "}
                 <br />
                 Viajar?
               </span>
             </h2>
           </div>
-          <h2 className="font-bold text-[24px] mt-[2rem] leading-tight text-center">
+          <h2 className="font-bold text-[24px] mt-[2rem] leading-tight md1090:text-center min700:text-[2.2rem] min700:mx-[2rem]">
             Estimule os preços para os dias que seus animalzinhos irá curtir com
             a gente :)
           </h2>
@@ -27,7 +27,7 @@ const Plan = () => {
           {/* Forms */}
           <form className="flex flex-col gap-[2rem] mt-[2rem] md1090:justify-center md1090:items-center">
             {/* Pet */}
-            <div className="w-[100%] flex justify-center flex-col items-center">
+            <div className="md1090:w-[100%] md1090:flex md1090:justify-center md1090:flex-col md1090:items-center">
               <label className="font-[600] text-[18px] mt-[2rem] leading-tight text-[#838383]">
                 Seu pet
               </label>
@@ -39,7 +39,7 @@ const Plan = () => {
             </div>
 
             {/* Services */}
-            <div className="w-[100%] flex justify-center flex-col items-center">
+            <div className="md1090:w-[100%] md1090:flex md1090:justify-center md1090:flex-col md1090:items-center">
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Serviço
               </label>
@@ -52,7 +52,7 @@ const Plan = () => {
             </div>
 
             {/* Days */}
-            <div className="w-[100%] flex justify-center flex-col items-center">
+            <div className="md1090:w-[100%] md1090:flex md1090:justify-center md1090:flex-col md1090:items-center">
               <label className="font-[600] text-[18px] leading-tight text-[#838383] ">
                 Dias
               </label>
@@ -72,7 +72,7 @@ const Plan = () => {
             </div>
           </form>
           {/* Total + Button */}
-          <div className="flex items-baseline gap-[3rem] md1090:justify-center">
+          <div className="flex items-baseline gap-[3rem] md1090:justify-center  min450:flex-col min450:items-center">
             <div
               onClick={() => {
                 alert("Hello");
