@@ -1,9 +1,6 @@
 import React from "react";
-import ball from "../../imgs/ball.png";
-import food from "../../imgs/food.png";
 import img2 from "../../imgs/img2.png";
 import img3 from "../../imgs/img3.png";
-import toy from "../../imgs/toy.png";
 import Button from "../Button/Button";
 import { aboutAct } from "./aboutAct";
 import "./style-about.css";
@@ -14,39 +11,21 @@ const About = () => {
         id="about"
         className="section-about relative md1090:flex-col-reverse pt-[10rem]">
         <div className="mt-[10rem] relative md1300:mt-[15rem] md1090:mt-[0]">
-          <div>
-            <img
-              src={toy}
-              alt=""
-              className="absolute bottom-[1%] left-[45%] md1300:left-[20%] md1300:bottom-[10%] md1300:w-[8rem]  md1090:hidden"
-            />
-          </div>
-          <div>
-            <img
-              src={ball}
-              alt=""
-              className="absolute bottom-[60%] left-[60%] animate-spin infinite z-[10] md1090:hidden"
-            />
-          </div>
-          <img
-            src={food}
-            alt=""
-            className="absolute bottom-[10%] left-[60%]  md1300:left-[40%] md1300:-bottom-[10%] w-[30rem] md1300:w-[25rem]
-            md1090:hidden"
-          />
           <img src={img2} alt="" />
         </div>
         <div className="text-[76px] font-bold max-w-[60rem] leading-tight md1090:text-center md1090:w-[auto] min700:text-[5.2rem]">
           <h2>
             Nós fazemos <br />
-            <span className="text-[#FBB042] min700:text-[4.8rem]">Eles felizes</span>
+            <span className="text-[#FBB042] min700:text-[4.8rem]">
+              Eles felizes
+            </span>
           </h2>
           <p className="text-[1.8rem] text-[#838383]  mt-[1rem] mr-[9rem] min1090:mr-0 min700:text-[1.5rem] min700:mx-[2rem]">
             Desde o momento em que nossos amigos farejam o caminho pela porta
             pela manhã até que abanam suas caudas cansadas, mas satisfeitas à
             tarde, nós atendemos à sua natureza.
           </p>
-          <div className="flex md1090:justify-center">
+          <div className="md1090:flex md1090:justify-center md1090:transform  md1090:translate-x-[-5rem] min800:translate-x-0">
             <Button text="Reserve Agora" />
           </div>
         </div>
@@ -76,8 +55,11 @@ const About = () => {
                 <div
                   className="flex flex-col justify-center items-center gap-[0.5rem]"
                   key={index}>
-                  <i className={`fa-solid ${value.icon}  text-[3.5rem] min700:text-[2.8rem]`}></i>
-                  <p className="text-[2rem] min700:text-[1.6rem]">{value.title}</p>
+                  <i
+                    className={`fa-solid ${value.icon}  text-[3.5rem] min700:text-[2.8rem]`}></i>
+                  <p className="text-[2rem] min700:text-[1.6rem]">
+                    {value.title}
+                  </p>
                 </div>
               ))}
             </div>
