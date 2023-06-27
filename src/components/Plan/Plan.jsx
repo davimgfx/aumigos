@@ -17,19 +17,19 @@ const Plan = () => {
       alert("Preencha todos os campos");
     } else if (animal === "dog") {
       if (service === "hosp") {
-        setResult("R$ " + (50 * parseInt(days)));
+        setResult("R$ " + (50 * parseInt(days)) + ",00");
       } else if (service === "shower") {
-        setResult("R$ " + (50 * parseInt(days)));
+        setResult("R$ " + (50 * parseInt(days)) + ",00");
       } else if (service === "all") {
-        setResult("R$ " + (90 * parseInt(days)));
+        setResult("R$ " + (90 * parseInt(days)) + ",00");
       }
     } else if (animal === "cat") {
       if (service === "hosp") {
-        setResult("R$ " + (30 * parseInt(days)).toFixed(2));
+        setResult("R$ " + (30 * parseInt(days)) + ",00");
       } else if (service === "shower") {
-        setResult("R$ " + (50 * parseInt(days)).toFixed(2));
+        setResult("R$ " + (50 * parseInt(days)) + ",00");
       } else if (service === "all") {
-        setResult("R$ " + (70 * parseInt(days)).toFixed(2));
+        setResult("R$ " + (70 * parseInt(days)) + ",00");
       }
     }
   };
