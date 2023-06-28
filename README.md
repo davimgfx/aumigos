@@ -19,6 +19,6 @@ Venha fazer parte da nossa equipe
 
 ### Fotos do projeto:
 ### Home
-![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/b71ac001-26b1-4630-bd49-87bac3bd243f)
+![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/37a3a262-874e-4b4f-8275-d6e040005d5e)
 
 ### Shop
