@@ -17,7 +17,7 @@ const Pricing = () => {
               Nossos filhotes e outros cães muito ativos têm muito espaço para
               correr e brincar, além de cobertores confortáveis.
             </p>
-            <div className="flex justify-center">
+            <div className="md1300:flex md1300:justify-center">
               <Button text="Veja descontos" />
             </div>
           </div>
