@@ -12,7 +12,6 @@ Venha fazer parte da nossa equipe
 <br />
 👉 Site: [Clique aqui](https://aumigos-casa.vercel.app/)
 
-
 ### Construido com:
 
 - React JS <br>
@@ -20,6 +19,6 @@ Venha fazer parte da nossa equipe
 
 ### Fotos do projeto:
 ### Home
-![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/e05ee0ce-cdd1-4b31-b385-f9dcb3ae87ce)
+![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/37a3a262-874e-4b4f-8275-d6e040005d5e)
 
 ### Shop
