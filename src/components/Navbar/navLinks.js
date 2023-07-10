@@ -21,9 +21,5 @@ export const navLinks = [
       id: "pricing",
       title: "Preços",
     },
-    {
-      id: "shop",
-      title: "Shop",
-    },
   ];
   

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../imgs/logo.png";
 import { footerIcons } from "../Footer/footerInfo.js";
 import { navLinks } from "./navLinks";
+import { Link } from "react-router-dom";
 import "./style-navbar.css";
 const Navbar = () => {
   const [menu, setMenu] = useState(false); 
@@ -17,9 +18,12 @@ const Navbar = () => {
         <ul className={`nav-items ${menu ? "min900:left-0" : "min900:left-[100%]"}`}>
           {navLinks.map((nav, index) => (
             <li className="nav-item" key={index} onClick={() => setMenu(!menu)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`../#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <Link to="/shop">
+            <li className="nav-item" onClick={() => setMenu(!menu)}>Shop</li>
+          </Link>
           {/* Menu */}
           <div className="gap-[1.6rem] items-center min375:flex-wrap min375:justify-center hidden min900:flex">
             {footerIcons.map((icon, index) => (

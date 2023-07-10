@@ -7,22 +7,24 @@ import {
   Pricing,
   CheckIn,
   Footer,
-  Plan
+  Plan,
 } from "./components";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Feedback />
-      <Pricing />
-      <CheckIn/>
-      <Plan />
+      <Outlet />
       <Footer />
-    </div>
+    </>
   );
 }
 
