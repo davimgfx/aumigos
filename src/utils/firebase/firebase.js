@@ -24,6 +24,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
+//add to the firebase database
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
                                         //users
     const collectionRef = collection(db, collectionKey)
@@ -36,4 +37,19 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
 
     await batch.commit()
     console.log("done")
+}
+
+//get the products from the firebase database
+export const getCategoriesAndDocuments = async () => {
+  const collectionRef = collection(db, "products")
+  const q = query(collectionRef)
+
+  const querySnapshot = await getDocs(q)
+  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+    const { categorie, items } = docSnapshot.data()
+    acc[categorie] = items
+    return acc
+  }, [])
+
+  return categoryMap
 }
