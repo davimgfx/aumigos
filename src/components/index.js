@@ -8,4 +8,5 @@ import Footer from "./Footer/Footer.jsx"
 import Pricing from "./Pricing/Pricing.jsx"
 import CheckIn from "./CheckIn/CheckIn.jsx"
 import Plan from "./Plan/Plan.jsx"
-export { Navbar, Hero, About, Button, Services, Feedback, Pricing, CheckIn, Footer, Plan }
+import CartDropdown from "./CartDropdown/CartDropdown.jsx"
+export { Navbar, Hero, About, Button, Services, Feedback, Pricing, CheckIn, Footer, Plan, CartDropdown }

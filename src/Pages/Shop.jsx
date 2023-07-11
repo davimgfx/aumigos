@@ -1,6 +1,6 @@
 import { Rating } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { Button } from "../components";
+import { Button, CartDropdown } from "../components";
 import { getCategoriesAndDocuments } from "../utils/firebase/firebase";
 import "./style-shop.css";
 
@@ -8,19 +8,19 @@ const Shop = () => {
   const [categoriesMap, setCategoriesMap] = useState({});
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [loading, setLoading] = useState(false);
-
+  const [cartItems, setCartItems] = useState([]);
+  //Render the products
   useEffect(() => {
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
       setCategoriesMap(categoryMap);
-
       setLoading(true);
     };
 
     getCategoriesMap();
   }, []);
 
-  console.log(Object.keys(categoriesMap));
+  // Loading e organize the categories
   const categoryKeys = Object.keys(categoriesMap);
   const capitalizeFirstLetter = (word) =>
     word.replace(/^\w/, (c) => c.toUpperCase());
@@ -52,10 +52,30 @@ const Shop = () => {
     ));
   };
 
+  //Cart Add
+  const addCartItem = (productToAdd) => {
+    const existingCartItem = cartItems.find(
+      (cartItem) => cartItem.id === productToAdd.id
+    );
+
+    if (existingCartItem) {
+      setCartItems(
+        cartItems.map((cartItem) =>
+          cartItem.id === productToAdd.id
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...productToAdd, quantity: 1 }]);
+    }
+  };
+
   return (
     <section className="shop-products">
       {loading ? (
         <>
+          <CartDropdown cartItems={cartItems} />
           <div className="category-buttons">
             <button
               className={`${
@@ -85,9 +105,7 @@ const Shop = () => {
                       <p className="absolute top-6 right-3 bg-[#82C55B] rounded-full text-[1.3rem] text-white w-[80px] h-[80px] flex justify-center items-center">
                         Promoção!
                       </p>
-                    ) : (
-                      ""
-                    )}
+                    ) : null}
                     <img
                       src={product.image}
                       alt={product.name}
@@ -120,7 +138,9 @@ const Shop = () => {
                         R$ {product.price}
                       </h2>
                     )}
-                    <div className="shop-products-button">
+                    <div
+                      className="shop-products-button"
+                      onClick={() => addCartItem(product)}>
                       <Button text="Adicionar ao carrinho" />
                     </div>
                   </div>
