@@ -10,16 +10,18 @@ Também temos banho e hidratação, para deixar seus animalzinhos limpinhos e ch
 Venha fazer parte da nossa equipe 
 <br />
 <br />
-👉 Site: [Clique aqui](https://aumigos-casa.vercel.app/)
+👉 Site: https://aumigos-casa.vercel.app/
 
 
 ### Construido com:
 
 - React JS <br>
 - Tailwind.CSS  <br>
+- Firebase <br>
 
 ### Fotos do projeto:
 ### Home
 ![Home_Page](https://github.com/davimgfx/aumigos/assets/118557337/fb72ad0d-5424-461d-b418-a4dd529caf96)
 
 ### Shop
+![Shop_Page](https://github.com/davimgfx/aumigos/assets/118557337/4af295a1-82b6-4a4d-be8b-6a3c8aab7c4a)
