@@ -119,7 +119,7 @@ const Cart = ({ cartItems, setCartItems }) => {
           </div>
         </div>
       )}
-      <div className="absolute top-[10rem] right-[13rem] z-[102]">
+      <div className="absolute top-[10rem] right-[13rem] ">
         <div
           className="text-[2rem] w-[50px] h-[50px] bg-[#fbb042] rounded-full flex justify-center items-center fixed cursor-pointer text-white hover:border-solid hover:border-2 hover:bg-white  hover:text-[#fbb042]"
           onClick={() => setIsCartOpen(true)}>
