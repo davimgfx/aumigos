@@ -75,7 +75,7 @@ const Shop = () => {
     <section className="shop-products">
       {loading ? (
         <>
-          <CartDropdown cartItems={cartItems} />
+          <CartDropdown cartItems={cartItems} setCartItems={setCartItems} />
           <div className="category-buttons">
             <button
               className={`${
