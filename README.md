@@ -17,6 +17,7 @@ Venha fazer parte da nossa equipe
 
 - React JS <br>
 - Tailwind.CSS  <br>
+- Firebase <br>
 
 ### Fotos do projeto:
 ### Home
