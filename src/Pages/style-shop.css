@@ -1,13 +1,17 @@
 .loading-layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
 .loading-div {
+  width: 250px;
+  min-height: 400px;
   display: flex;
   align-items: center;
+
   flex-direction: column;
   gap: 0.2rem;
   border: 1px solid #ccc;
@@ -15,12 +19,13 @@
 }
 
 .loadingImg {
-  width: 300px;
+  width: 249px;
   height: 300px;
   background: url("../imgs/loadingImg.png");
   object-fit: cover;
   background-size: cover;
   background-position: center center;
+  border-radius: 1.5rem;
 }
 
 .shop-products {
@@ -67,6 +72,8 @@
 }
 
 .shop-products-item {
+  width: 250px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
