@@ -67,7 +67,7 @@ const Cart = ({ cartItems, setCartItems }) => {
   return (
     <>
       {isCartOpen && (
-        <div className="text-[2.6rem] fixed top-0 right-[0] w-[50rem] bg-white z-[250] h-[100vh] is-cart-open py-[2rem] px-[1.2rem]"  ref={cartRef}>
+        <div className="text-[2.6rem] fixed top-0 right-[0] w-[50rem] min900:w-[100%] bg-white z-[250] h-[100vh] is-cart-open py-[2rem] px-[1.2rem]"  ref={cartRef}>
           <div className="flex justify-around items-center">
             <h2>Shopping Cart ({itemInTheCart})</h2>
             <i
@@ -119,7 +119,7 @@ const Cart = ({ cartItems, setCartItems }) => {
           </div>
         </div>
       )}
-      <div className="absolute top-[10rem] right-[13rem] ">
+      <div className="absolute top-[10rem] right-[13rem] min900:right-[8rem] z-[60]">
         <div
           className="text-[2rem] w-[50px] h-[50px] bg-[#fbb042] rounded-full flex justify-center items-center fixed cursor-pointer text-white hover:border-solid hover:border-2 hover:bg-white  hover:text-[#fbb042]"
           onClick={() => setIsCartOpen(true)}>
